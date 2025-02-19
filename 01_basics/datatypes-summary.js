@@ -27,4 +27,28 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello world");
 }
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
+
+// *********************************************
+
+// stack (Primitive)in stack we have the copy , Heap(Non-primitive)in heap we have the refference
+
+let myYoutubename = "adyajha"
+
+let anothername = myYoutubename
+anothername = "ashish"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "adya@gamil.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
